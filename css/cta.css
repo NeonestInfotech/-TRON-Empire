@@ -1,0 +1,66 @@
+/* --- CTA --- */
+.cta {
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cta__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(5, 7, 10, 0.55) 0%,
+      rgba(5, 7, 10, 0.35) 45%,
+      rgba(5, 7, 10, 0.65) 100%
+    ),
+    url('../assets/cta-bg.png') center / cover no-repeat;
+  z-index: 0;
+}
+
+.cta__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(5, 7, 10, 0.15) 0%, rgba(5, 7, 10, 0.55) 100%);
+}
+
+.cta__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cta__inner .badge {
+  margin-bottom: 24px;
+}
+
+.cta__title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.cta__desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  margin: 0 auto 36px;
+  line-height: 1.75;
+}
+
+.btn--cta {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  padding: 16px 40px;
+  min-width: 280px;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.25);
+}

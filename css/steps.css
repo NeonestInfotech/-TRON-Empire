@@ -1,0 +1,51 @@
+/* --- Steps --- */
+.steps {
+  padding: var(--section-padding) 0;
+  background: #0B1020;
+  text-align: center;
+}
+
+.steps .section-title {
+  margin-bottom: 56px;
+}
+
+.steps__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  text-align: left;
+}
+
+.step-card__num-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.step-card__number {
+  font-size: 40px;
+  font-weight: 800;
+  color: #7b42ff;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.step-card__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(123, 66, 255, 0.6) 0%, rgba(123, 66, 255, 0.15) 100%);
+  min-width: 20px;
+}
+
+.step-card__title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.step-card__desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

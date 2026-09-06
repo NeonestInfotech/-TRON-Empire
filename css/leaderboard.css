@@ -1,0 +1,182 @@
+/* --- Leaderboard --- */
+.leaderboard {
+  padding: var(--section-padding) 0;
+  background: var #050816 (--bg-secondary);
+}
+
+.leaderboard__wrap {
+  text-align: center;
+}
+
+.leaderboard .section-title {
+  margin-bottom: 48px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.podium-card {
+  background: #0c101b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 28px 24px 24px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.podium-card--1 {
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+  padding-bottom: 36px;
+  padding-top: 32px;
+  order: 2;
+  transform: translateY(-12px);
+}
+
+.podium-card--2 {
+  order: 1;
+}
+
+.podium-card--3 {
+  order: 3;
+}
+
+.podium-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  border: 2px solid transparent;
+}
+
+.podium-card__badge--blue {
+  color: #fff;
+  border-color: rgba(59, 130, 246, 0.6);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.podium-card__badge--purple {
+  color: #fff;
+  border-color: rgba(168, 85, 247, 0.6);
+  background: rgba(168, 85, 247, 0.1);
+}
+
+.podium-card__badge--trophy {
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  border-color: rgba(34, 211, 238, 0.5);
+  background: rgba(34, 211, 238, 0.12);
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.35);
+}
+
+.podium-card__name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.podium-card__power {
+  display: block;
+  font-size: 15px;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.podium-card__power--purple {
+  color: #c084fc;
+}
+
+.podium-card__level {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: #0c101b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  text-align: left;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.leaderboard-table thead {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.leaderboard-table th {
+  padding: 14px 24px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.leaderboard-table th:nth-child(3),
+.leaderboard-table th:nth-child(4),
+.leaderboard-table th:nth-child(5) {
+  text-align: right;
+}
+
+.leaderboard-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+}
+
+.leaderboard-table td:nth-child(3),
+.leaderboard-table td:nth-child(4),
+.leaderboard-table td:nth-child(5) {
+  text-align: right;
+}
+
+.leaderboard-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.leaderboard-table td:first-child {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.leaderboard-table td:nth-child(2) {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.lb-power {
+  color: var(--accent-cyan) !important;
+  font-weight: 600;
+}
+
+.lb-progress {
+  color: #22c55e !important;
+  font-weight: 700;
+}

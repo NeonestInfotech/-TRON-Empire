@@ -1,0 +1,263 @@
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 80px;
+  }
+
+  .hero__inner {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .hero__features {
+    flex-wrap: wrap;
+    gap: 20px 28px;
+  }
+
+  .dashboard__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard__analytics {
+    grid-template-columns: 1fr;
+  }
+
+  .tiers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tier-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .upgrade__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .upgrade__visual {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 64px;
+    --container-padding: 20px;
+  }
+
+  .header__inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: rgba(5, 5, 16, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav--open {
+    max-height: 320px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding: 20px var(--container-padding);
+    gap: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-bottom: 48px;
+  }
+
+  .hero__inner {
+    padding: calc(var(--header-height) + 20px) 20px 0;
+  }
+
+  .hero__title {
+    font-size: clamp(32px, 6.5vw, 44px);
+  }
+
+  .hero__tagline {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .hero__desc {
+    max-width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .hero__btn {
+    width: auto;
+    min-width: 220px;
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+
+  .hero__features {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero__feature {
+    white-space: normal;
+    font-size: 14px;
+  }
+
+  .hero__feature svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .dashboard__card {
+    padding: 20px;
+  }
+
+  .dashboard__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .yield-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tiers__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tier-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .podium {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podium-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .podium-card--1 {
+    order: 1;
+    transform: none;
+  }
+
+  .podium-card--2 {
+    order: 2;
+  }
+
+  .podium-card--3 {
+    order: 3;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cta__title {
+    white-space: normal;
+    font-size: clamp(24px, 6vw, 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard__topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hashrate-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}

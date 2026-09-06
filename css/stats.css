@@ -1,0 +1,31 @@
+/* --- Stats --- */
+.stats {
+  padding: 80px 0;
+  background: #0B1020;
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.stats-item__value {
+  display: block;
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  background: linear-gradient(90deg, #22d3ee 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.stats-item__label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
